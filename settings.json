@@ -1,0 +1,63 @@
+{
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 20,
+  "[javascript]": {
+    "editor.showUnused": true
+  },
+  "[javascriptreact]": {
+    "editor.showUnused": true
+  },
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "eslint.packageManager": "yarn",
+  "javascript.validate.enable": false,
+  "workbench.iconTheme": "vscode-icons",
+  // "ruby.rubocop.executePath": "bundle exec /Users/monica/.rvm/gems/ruby-2.5.1/wrappers/rubocop"
+  "ruby.rubocop.executePath": "",
+  "ruby.rubocop.onSave": true,
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  "window.zoomLevel": 2,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js" //class keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "workbench.colorTheme": "Horizon",
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on"
+}
