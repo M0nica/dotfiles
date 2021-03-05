@@ -11,9 +11,7 @@
     "suppressShowKeyBindingsNotice": true
   },
   "eslint.packageManager": "yarn",
-  "javascript.validate.enable": false,
   "workbench.iconTheme": "vscode-icons",
-  // "ruby.rubocop.executePath": "bundle exec /Users/monica/.rvm/gems/ruby-2.5.1/wrappers/rubocop"
   "ruby.rubocop.executePath": "",
   "ruby.rubocop.onSave": true,
   "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
@@ -58,6 +56,6 @@
     "source.fixAll.eslint": true
   },
   "workbench.colorTheme": "Horizon",
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "editor.wordWrap": "on"
 }
