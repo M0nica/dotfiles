@@ -2,16 +2,12 @@
 
 This repository houses some of the set up scripts that I use to get a new MacOS up-and-running.
 
-- Mac Setup Folder 
-  - script to brew install applications
-  
-# Install apps and binaries with Brew
-source mac/brew-essentials.sh
-```
+- Mac Setup Folder contains:
+  - brew-essentials script to brew install applications by running: `source mac/brew-essentials.sh
+`
+- VSCode folder contains:
+  - VSCode settings.json
 
-- VSCode Folder 
-  - Contains VSCode settings.json
-```
 
 This repo was inspired by [zellwk dotfiles](https://github.com/zellwk/dotfiles)'s and his repo was a derivative of [mathiasbynens dotfiles](https://github.com/mathiasbynens/dotfiles)
 
