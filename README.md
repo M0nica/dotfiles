@@ -7,7 +7,9 @@ This repository houses some of the set up scripts that I use to get a new MacOS 
 `
 - VSCode folder contains:
   - VSCode settings.json
-
+  
+- Keyboard folder contains:
+  - Via keyboard configurations for setting up layers and macros on keyboard. 
 
 This repo was inspired by [zellwk dotfiles](https://github.com/zellwk/dotfiles)'s and his repo was a derivative of [mathiasbynens dotfiles](https://github.com/mathiasbynens/dotfiles)
 
