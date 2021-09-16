@@ -59,8 +59,5 @@ brew install visual-studio-code
 brew install zeplin
 brew install zoom
 
-# Restore plists of apps
-mackup restore
-
 # Remove outdated versions from the cellar.
 brew cleanup
