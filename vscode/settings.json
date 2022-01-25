@@ -16,6 +16,7 @@
   "ruby.rubocop.onSave": true,
   "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
   "window.zoomLevel": 2,
+  "editor.bracketPairColorization.enabled": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.fontLigatures": true,
