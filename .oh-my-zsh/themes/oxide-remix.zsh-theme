@@ -47,7 +47,7 @@ FMT_UNSTAGED="%{$oxide_reset_color%} %{$oxide_orange%}●"
 FMT_STAGED="%{$oxide_reset_color%} %{$oxide_limegreen%}✚"
 FMT_ACTION="(%{$oxide_limegreen%}%a%{$oxide_reset_color%})"
 # Updated the git branch icon in default 'Oxide theme' from  => 
-FMT_VCS_STATUS="on %{$oxide_turquoise%} %b%u%c%{$oxide_reset_color%}"
+FMT_VCS_STATUS=" %{$oxide_turquoise%} %b%u%c%{$oxide_reset_color%}"
 
 zstyle ':vcs_info:*' enable git svn
 zstyle ':vcs_info:*' check-for-changes true
