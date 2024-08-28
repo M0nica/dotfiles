@@ -75,14 +75,6 @@ add-zsh-hook precmd vcs_info
 PROMPT=$'\n%{$oxide_lavendar%}%~%{$oxide_reset_color%} ${vcs_info_msg_0_}\n%(?.%{%F{white}%}.%{$oxide_red%})%(!.#.❯)%{$oxide_reset_color%} '
 
 
-
-
- echo -e " ___"
- echo "|[_]|"
- echo "|+ ;|"
- echo "\`---'"
-
-
 # Get the current hour in 24-hour format
 hour=$(date +"%H")
 
