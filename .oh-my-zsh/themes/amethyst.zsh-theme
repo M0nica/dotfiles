@@ -30,8 +30,8 @@
 #  echo "||,-----.||"
 #  echo "|||     |||    __  __             _                _"
 #  echo "|||_____|||   |  \/  | ___  _ __ (_) ___ __ _   __| | _____   __"
-#  echo "|\`-------'|   | |\/| |/ _ \| '_ \| |/ __/ _\` | / _\` |/ _ \ \ / /" 
-#  echo "| +     O |   | |  | | (_) | | | | | (_| (_| || (_| |  __/\ V /" 
+#  echo "|\`-------'|   | |\/| |/ _ \| '_ \| |/ __/ _\` | / _\` |/ _ \ \ / /"
+#  echo "| +     O |   | |  | | (_) | | | | | (_| (_| || (_| |  __/\ V /"
 #  echo "|      O  |   |_|  |_|\___/|_| |_|_|\___\__,_(_)__,_|\___| \_/            "
 #  echo "| / /  ##,|"
 #  echo " -------' "
@@ -99,7 +99,7 @@ PROMPT=$'\n%{$oxide_lavendar%}%~%{$oxide_reset_color%} ${vcs_info_msg_0_}\n%(?.%
  echo -e " ___"
  echo "|[_]|"
  echo "|+ ;|"
- echo "\`---'" 
+ echo "\`---'"
 
 
 #   echo "             *"
@@ -109,8 +109,34 @@ PROMPT=$'\n%{$oxide_lavendar%}%~%{$oxide_reset_color%} ${vcs_info_msg_0_}\n%(?.%
 #   echo "      (<><><>O<><><>)"
 #   echo "       '==========='"
 
- export QUOTEY_CUSTOM_FOLDER="/Users/monica/Dev/dotfiles/"
- # npm install -g  quotey in order to display quotes on startup
- quotey -c "terminal-quotes.json"
 
+# Get the current hour in 24-hour format
+hour=$(date +"%H")
+
+# Define time ranges
+morning_start=5    # 5 AM
+morning_end=11     # 11 AM
+afternoon_start=12 # 12 PM
+afternoon_end=17   # 5 PM
+
+
+# Check the time of day and print a message
+if [ "$hour" -ge "$morning_start" ] && [ "$hour" -le "$morning_end" ]; then
+    greeting="Good morning"
+elif [ "$hour" -ge "$afternoon_start" ] && [ "$hour" -le "$afternoon_end" ]; then
+    greeting="Good afternoon"
+else
+    greeting="Good evening"
+fi
+
+
+ echo -e " ___"
+ echo "|[_]|"
+ echo "|+ ;|  ✦ $greeting, Monica! ✦"
+ echo "\`---'"
+
+
+#  export QUOTEY_CUSTOM_FOLDER="/Users/monica/Dev/dotfiles/"
+
+#  quotey -c "terminal-quotes.json"
 
