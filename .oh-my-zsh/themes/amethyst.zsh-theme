@@ -110,7 +110,7 @@ PROMPT=$'\n%{$oxide_lavendar%}%~%{$oxide_reset_color%} ${vcs_info_msg_0_}\n%(?.%
 #   echo "       '==========='"
 
  export QUOTEY_CUSTOM_FOLDER="/Users/monica/Dev/dotfiles/"
-
+ # npm install -g  quotey in order to display quotes on startup
  quotey -c "terminal-quotes.json"
 
 
