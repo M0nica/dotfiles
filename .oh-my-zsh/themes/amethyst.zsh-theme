@@ -23,6 +23,25 @@
 # Terminal:
 # \n => Newline/Line Feed (LF)
 
+
+
+#  echo "_._______"
+#  echo "| _______ |"
+#  echo "||,-----.||"
+#  echo "|||     |||    __  __             _                _"
+#  echo "|||_____|||   |  \/  | ___  _ __ (_) ___ __ _   __| | _____   __"
+#  echo "|\`-------'|   | |\/| |/ _ \| '_ \| |/ __/ _\` | / _\` |/ _ \ \ / /" 
+#  echo "| +     O |   | |  | | (_) | | | | | (_| (_| || (_| |  __/\ V /" 
+#  echo "|      O  |   |_|  |_|\___/|_| |_|_|\___\__,_(_)__,_|\___| \_/            "
+#  echo "| / /  ##,|"
+#  echo " -------' "
+
+#  echo "___"
+#  echo "|[_]|"
+#  echo "|+ ;|"
+#  echo "`---'"
+
+
 setopt PROMPT_SUBST
 
 autoload -U add-zsh-hook
@@ -73,3 +92,25 @@ add-zsh-hook precmd vcs_info
 
 # Oxide prompt style.
 PROMPT=$'\n%{$oxide_lavendar%}%~%{$oxide_reset_color%} ${vcs_info_msg_0_}\n%(?.%{%F{white}%}.%{$oxide_red%})%(!.#.❯)%{$oxide_reset_color%} '
+
+
+
+
+ echo -e " ___"
+ echo "|[_]|"
+ echo "|+ ;|"
+ echo "\`---'" 
+
+
+#   echo "             *"
+#   echo "           * | *"
+#   echo "     * * * \\|O|/ * * *"
+#   echo "      \\o\\o\\o|O|o/o/o/"
+#   echo "      (<><><>O<><><>)"
+#   echo "       '==========='"
+
+ export QUOTEY_CUSTOM_FOLDER="/Users/monica/Dev/dotfiles/"
+
+ quotey -c "terminal-quotes.json"
+
+
