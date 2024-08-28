@@ -108,9 +108,3 @@ fi
  echo "|+ ;|  ✦ $greeting, Monica! ✦"
  echo "\`---'"
 
-
-##  npm install -g quotey
-
-#  export QUOTEY_CUSTOM_FOLDER="/Users/monica/Dev/dotfiles/"
-#  quotey -c "terminal-quotes.json"
-
