@@ -95,7 +95,7 @@ else
 fi
 
 
- echo -e " ___"
+ echo " ___"
  echo "|[_]|"
  echo "|+ ;|  ✦ $greeting, Monica! ✦"
  echo "\`---'"
