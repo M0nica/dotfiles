@@ -1,0 +1,33 @@
+# This is Git's per-user configuration file.
+# [user]
+# Please adapt and uncomment the following lines:
+#	name = Monica Powell
+#	email =
+[push]
+	default = current
+	autoSetupRemote = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	default = current
+	autoSetupRemote = true
+	rebase = true
+	ff = only
+[branch]
+	autosetupmerge = always
+	sort = -committerdate
+[safe]
+	directory = /var/task
+[core]
+	editor = nano
+	pager = delta
+[help]
+	autocorrect = prompt
+[merge]
+	conflictstyle = diff3
+[delta]
+	syntax-theme = Catppuccin Latte
+	light = false
